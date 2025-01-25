@@ -1,15 +1,14 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
-
-
-import AnimatedInput from './animation/Input';
+import AnimatedHero from './animation/Heropage';
 
 const App = () => {
 
   return (
-  <>
-
-  <AnimatedInput/>
-  </>
+  <div>
+    <AnimatedHero/>
+  </div>
   );
 };
 

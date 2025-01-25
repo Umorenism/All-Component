@@ -54,7 +54,7 @@ const SliderCard = () => {
       </div>
       
       <div
-        className="absolute top-[50%] right-5 transform -translate-y-1/2 p-2 rounded-full bg-black text-white cursor-pointer"
+        className="absolute top-[50%] right-5 transform -translate-y-1/2 p-3 rounded-full bg-black text-white cursor-pointer"
         onClick={nextSlide}
       >
         <BsChevronCompactRight size={30} />
