@@ -6,7 +6,7 @@ import Calculator from './component/Calculator';
 const App = () => {
 
   return (
-  <div>
+  <div className='min-h-screen justify-center items-center flex w-full bg-violet-400'>
     <Calculator/>
   </div>
   );
