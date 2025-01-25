@@ -1,13 +1,13 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
-import AnimatedHero from './animation/Heropage';
+import Calculator from './component/Calculator';
 
 const App = () => {
 
   return (
   <div>
-    <AnimatedHero/>
+    <Calculator/>
   </div>
   );
 };
