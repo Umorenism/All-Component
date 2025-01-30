@@ -3,3 +3,9 @@
 @tailwind components;
 @tailwind utilities;
 
+.bg-img{
+    background-image: url('https://images.pexels.com/photos/167964/pexels-photo-167964.jpeg?auto=compress&cs=tinysrgb&w=600');
+}
+.bg-about{
+    background-image: url('/src/assets/founder.webp');
+}

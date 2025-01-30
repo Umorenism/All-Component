@@ -7,7 +7,7 @@ return (
     <h1 className="mb-4 text-4xl text-white">Open Model</h1>
     
     <button className="bg-violet-500 py-2 px-10 w-[40%]" onClick={()=>setShowModel(true)}>open</button>
-   {showModel &&  <Model  onClose={()=>setShowModel(false)}/>}
+    {showModel &&  <Model  onClose={()=>setShowModel(false)}/>}
   </div>
 )
 

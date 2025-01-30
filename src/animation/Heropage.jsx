@@ -1,9 +1,15 @@
 import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
+import AnimatedButton from "./animationButton";
+import About from "../pages/About";
+import Achievement from "../pages/Achievement";
+import Mission from "../pages/Mission";
+import { Footer } from "../component/Footer";
 
 const AnimatedHero = () => {
   return (
-    <div className="min-h-screen bg-pink-900 text-white flex flex-col items-center justify-center gap-10 p-5">
+    <>
+    <div className="w-full min-h-[600px] bg-cover bg-center flex flex-col items-center justify-center text-center text-white bg-img">
       {/* Hero Section with Typing Effect */}
       <motion.div
         className="text-center"
@@ -11,14 +17,14 @@ const AnimatedHero = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
-        <h1 className="text-4xl font-bold">
+        <h1 className="text-4xl font-bold mb-4">
           <TypeAnimation
             sequence={[
-              "Welcome to Our Platform",
+              "WELCOME TO RT.HON.EMMANUEL UKONG",
               1000,
-              "Discover Amazing Features",
+              " AKA Mackay",
               1000,
-              "Join Us Today",
+              "A leader with a golden heart",
               1000,
             ]}
             wrapper="span"
@@ -27,11 +33,18 @@ const AnimatedHero = () => {
           />
         </h1>
       </motion.div>
-
-      
-     
-     
+      <p className="text-xl mb-4 text-white">A man who has transform boys to men!</p>
+       <AnimatedButton  title="CONTACT ME"/>  
     </div>
+    <hr />
+    <About/>
+    <hr />
+    <Mission/>
+    <hr />
+    <Achievement/>
+    <hr />
+   <Footer/>
+   </>
   );
 };
 

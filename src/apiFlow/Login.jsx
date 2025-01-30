@@ -1,17 +1,19 @@
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { loginUser } from "./apiService";
-
+import { useNavigate } from "react-router-dom";
 const Login = () => {
   const { register, handleSubmit, formState: { errors } } = useForm();
   const [loading, setLoading] = useState(false);
   const [errorMsg, setErrorMsg] = useState("");
+  const navigate = useNavigate()
 
   const onSubmit = async (data) => {
     setLoading(true);
     try {
       const response = await loginUser(data);
       alert("Login successful!");
+      navigate("/")
       console.log(response);
     } catch (error) {
       setErrorMsg(error);
